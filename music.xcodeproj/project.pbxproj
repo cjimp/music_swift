@@ -16,6 +16,10 @@
 		4F18F90628116FC800BB0524 /* musicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F90528116FC800BB0524 /* musicTests.swift */; };
 		4F18F91028116FC800BB0524 /* musicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F90F28116FC800BB0524 /* musicUITests.swift */; };
 		4F18F91228116FC800BB0524 /* musicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F91128116FC800BB0524 /* musicUITestsLaunchTests.swift */; };
+		4F6F785F281688C20077C20C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6F785E281688C20077C20C /* SplashViewController.swift */; };
+		4F6F7860281688C20077C20C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6F785E281688C20077C20C /* SplashViewController.swift */; };
+		4F6F78622816897E0077C20C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6F78612816897E0077C20C /* GuideViewController.swift */; };
+		4F6F78632816897E0077C20C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6F78612816897E0077C20C /* GuideViewController.swift */; };
 		551E665241CD2E2CF04F9619 /* Pods_music_musicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D693B716A86B8C2FBD1A5A /* Pods_music_musicUITests.framework */; };
 		FBB5AAF3F3F074B522BB2F95 /* Pods_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB895AF814076D50B8FAF542 /* Pods_music.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +55,8 @@
 		4F18F90B28116FC800BB0524 /* musicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F18F90F28116FC800BB0524 /* musicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicUITests.swift; sourceTree = "<group>"; };
 		4F18F91128116FC800BB0524 /* musicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F6F785E281688C20077C20C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4F6F78612816897E0077C20C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		52060A5C9FF267404FA62987 /* Pods-music.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-music.release.xcconfig"; path = "Target Support Files/Pods-music/Pods-music.release.xcconfig"; sourceTree = "<group>"; };
 		6673BAB274B4E16207985D4E /* Pods-musicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicTests.debug.xcconfig"; path = "Target Support Files/Pods-musicTests/Pods-musicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7513B8A36C55429EF1068B6 /* Pods_musicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_musicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +120,7 @@
 		4F18F8ED28116FC600BB0524 /* music */ = {
 			isa = PBXGroup;
 			children = (
+				4F6F785D281688930077C20C /* ViewControllers */,
 				4F18F8EE28116FC600BB0524 /* AppDelegate.swift */,
 				4F18F8F228116FC600BB0524 /* ViewController.swift */,
 				4F18F8F428116FC600BB0524 /* Main.storyboard */,
@@ -139,6 +146,15 @@
 				4F18F91128116FC800BB0524 /* musicUITestsLaunchTests.swift */,
 			);
 			path = musicUITests;
+			sourceTree = "<group>";
+		};
+		4F6F785D281688930077C20C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F6F785E281688C20077C20C /* SplashViewController.swift */,
+				4F6F78612816897E0077C20C /* GuideViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		7FFD946AC568F996D810B1AF /* Frameworks */ = {
@@ -439,6 +455,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6F785F281688C20077C20C /* SplashViewController.swift in Sources */,
+				4F6F78622816897E0077C20C /* GuideViewController.swift in Sources */,
 				4F18F8F328116FC600BB0524 /* ViewController.swift in Sources */,
 				4F18F8EF28116FC600BB0524 /* AppDelegate.swift in Sources */,
 			);
@@ -456,6 +474,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6F7860281688C20077C20C /* SplashViewController.swift in Sources */,
+				4F6F78632816897E0077C20C /* GuideViewController.swift in Sources */,
 				4F18F91228116FC800BB0524 /* musicUITestsLaunchTests.swift in Sources */,
 				4F18F91028116FC800BB0524 /* musicUITests.swift in Sources */,
 			);
