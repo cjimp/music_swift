@@ -59,13 +59,73 @@
                     <view key="view" contentMode="scaleToFill" id="1B9-gY-zJ0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFR-H3-UFZ" userLabel="Container">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-vx-Bo9" userLabel="Header">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5C-kY-wrS" userLabel="Footer">
+                                        <rect key="frame" x="0.0" y="718" width="414" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LA-U3-r85">
+                                                <rect key="frame" x="53" y="34" width="86" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="登陆/注册">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qn-vi-QZ9">
+                                                <rect key="frame" x="278" y="35" width="82" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="立即体验">
+                                                    <color key="titleColor" red="0.86666666670000003" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Fsw-aG-5ZH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="R5C-kY-wrS" firstAttribute="leading" secondItem="WFR-H3-UFZ" secondAttribute="leading" id="6z8-oD-Zu4"/>
+                                    <constraint firstAttribute="trailing" secondItem="73Y-vx-Bo9" secondAttribute="trailing" id="EfR-dR-z9e"/>
+                                    <constraint firstItem="73Y-vx-Bo9" firstAttribute="top" secondItem="WFR-H3-UFZ" secondAttribute="top" id="GQH-9N-2JN"/>
+                                    <constraint firstItem="R5C-kY-wrS" firstAttribute="top" secondItem="73Y-vx-Bo9" secondAttribute="bottom" id="VQ4-dZ-gAf"/>
+                                    <constraint firstAttribute="trailing" secondItem="R5C-kY-wrS" secondAttribute="trailing" id="kb6-Qw-SOw"/>
+                                    <constraint firstAttribute="bottom" secondItem="R5C-kY-wrS" secondAttribute="bottom" id="pGD-4z-Jl6"/>
+                                    <constraint firstItem="73Y-vx-Bo9" firstAttribute="leading" secondItem="WFR-H3-UFZ" secondAttribute="leading" id="rdz-Cx-nYf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pRe-bs-DYY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WFR-H3-UFZ" firstAttribute="top" secondItem="pRe-bs-DYY" secondAttribute="top" id="6jX-kX-0tx"/>
+                            <constraint firstItem="pRe-bs-DYY" firstAttribute="trailing" secondItem="WFR-H3-UFZ" secondAttribute="trailing" id="7u1-8q-aNf"/>
+                            <constraint firstItem="pRe-bs-DYY" firstAttribute="bottom" secondItem="WFR-H3-UFZ" secondAttribute="bottom" id="O33-fs-39l"/>
+                            <constraint firstItem="WFR-H3-UFZ" firstAttribute="leading" secondItem="pRe-bs-DYY" secondAttribute="leading" id="XvQ-0h-IfP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btEnter" destination="9Qn-vi-QZ9" id="MAV-ov-acd"/>
+                        <outlet property="btLoginOrRegister" destination="4LA-U3-r85" id="qMj-lz-96q"/>
+                        <outlet property="vwfootcontainer" destination="R5C-kY-wrS" id="Bg0-kB-Kia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dio-Fl-PhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="61"/>
+            <point key="canvasLocation" x="902.89855072463774" y="60.9375"/>
         </scene>
     </scenes>
     <resources>

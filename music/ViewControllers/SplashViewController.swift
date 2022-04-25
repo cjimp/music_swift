@@ -23,15 +23,18 @@ class SplashViewController: UIViewController {
     func next() {
         print("SplashController next")
         
-        // 获取到当前应用的AppDelegate对象
-        // 全局只有一个
+//        // 获取到当前应用的AppDelegate对象
+//        // 全局只有一个
+//
+//        // 这里会报错找不到AppDelegate，是正常现象
+//        // 可能是Xcode Bug，但可以正常运行
+//        let appDelegate=UIApplication.shared.delegate as! AppDelegate
+//
+//        // 调用它里面的方法显示引导界面
+//        appDelegate.toGuide()
         
-        // 这里会报错找不到AppDelegate，是正常现象
-        // 可能是Xcode Bug，但可以正常运行
-        let appDelegate=UIApplication.shared.delegate as! AppDelegate
-        
-        // 调用它里面的方法显示引导界面
-        appDelegate.toGuide()
+        //显示引导界面
+        AppDelegate.shared.toGuide()
 
     }
 
