@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0045F080C4D4B10A414E152F /* Pods_musicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7513B8A36C55429EF1068B6 /* Pods_musicTests.framework */; };
 		4F18F8EF28116FC600BB0524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F8EE28116FC600BB0524 /* AppDelegate.swift */; };
-		4F18F8F128116FC600BB0524 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F8F028116FC600BB0524 /* SceneDelegate.swift */; };
 		4F18F8F328116FC600BB0524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F8F228116FC600BB0524 /* ViewController.swift */; };
 		4F18F8F628116FC600BB0524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F8F428116FC600BB0524 /* Main.storyboard */; };
 		4F18F8F828116FC800BB0524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F8F728116FC800BB0524 /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 		38D693B716A86B8C2FBD1A5A /* Pods_music_musicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_music_musicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F18F8EB28116FC600BB0524 /* music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F18F8EE28116FC600BB0524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F18F8F028116FC600BB0524 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F18F8F228116FC600BB0524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F18F8F528116FC600BB0524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F18F8F728116FC800BB0524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				4F18F8EE28116FC600BB0524 /* AppDelegate.swift */,
-				4F18F8F028116FC600BB0524 /* SceneDelegate.swift */,
 				4F18F8F228116FC600BB0524 /* ViewController.swift */,
 				4F18F8F428116FC600BB0524 /* Main.storyboard */,
 				4F18F8F728116FC800BB0524 /* Assets.xcassets */,
@@ -164,7 +161,6 @@
 				6673BAB274B4E16207985D4E /* Pods-musicTests.debug.xcconfig */,
 				C4066D2A54BED30E35164E33 /* Pods-musicTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -445,7 +441,6 @@
 			files = (
 				4F18F8F328116FC600BB0524 /* ViewController.swift in Sources */,
 				4F18F8EF28116FC600BB0524 /* AppDelegate.swift in Sources */,
-				4F18F8F128116FC600BB0524 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
