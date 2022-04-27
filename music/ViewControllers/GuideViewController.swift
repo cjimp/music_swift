@@ -53,7 +53,7 @@ class GuideViewController: UIViewController {
         ViewUtil.showLargeRadius(view: btEnter)
         
 //        // 边框为1
-//        btEnter.layer.borderWidth = 1
+        btEnter.layer.borderWidth = 1
         
         
 //        // 边框颜色
@@ -61,8 +61,10 @@ class GuideViewController: UIViewController {
 //        // 透明度：0：完全透明，1:完全不透明
 //        // 取值都是0~1，所以要除以255.0
 //        btEnter.layer.borderColor=UIColor(red: 212/255.0, green: 0, blue: 0, alpha: 1.0).cgColor
-        btEnter.showColorPrimaryBorder()
-    }
+//        btEnter.showColorPrimaryBorder()
+//        btEnter.layer.borderColor=UIColor(hex: Color_Primary).cgColor
+        btEnter.layer.borderColor=UIColor(named: "ColorPrimary")?.cgColor
+}
 
     /*
     // MARK: - Navigation

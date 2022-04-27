@@ -7,16 +7,19 @@
 
 import Foundation
 
-// Mark:尺寸
-///立即体验按钮宽度
+// MARK: 尺寸
+/// 立即体验按钮宽度
 let SIZE_BUTTON_ENTER_WIDTH = 130.0
 
-///立即体验按钮高度
+/// 立即体验按钮高度
 let SIZE_BUTTON_ENTER_HEIGHT = 44.0
 
-// 圆角角度
+/// 圆角角度
 let SIZE_LARGE_RADIUS = 22
 
-//边框
+/// 边框
 let SIZE_BORDER = 1
 
+// MARK: 颜色
+/// 全局主色调
+let Color_Primary = 0xDD0000
