@@ -28,6 +28,9 @@
 		4F6F786E2816B9760077C20C /* ViewExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6F786C2816B9760077C20C /* ViewExtend.swift */; };
 		4F77A8E62819881F00C6FD05 /* ColorExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77A8E52819881F00C6FD05 /* ColorExtend.swift */; };
 		4F77A8E72819882B00C6FD05 /* ColorExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77A8E52819881F00C6FD05 /* ColorExtend.swift */; };
+		4F77A8E9281991DC00C6FD05 /* LoginOrRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */; };
+		4F77A8EA281991DC00C6FD05 /* LoginOrRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */; };
+		4F77A8EC281994FD00C6FD05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77A8EB281994FD00C6FD05 /* HomeViewController.swift */; };
 		551E665241CD2E2CF04F9619 /* Pods_music_musicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D693B716A86B8C2FBD1A5A /* Pods_music_musicUITests.framework */; };
 		FBB5AAF3F3F074B522BB2F95 /* Pods_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB895AF814076D50B8FAF542 /* Pods_music.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,9 @@
 		4F6F78682816B54B0077C20C /* ViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtil.swift; sourceTree = "<group>"; };
 		4F6F786C2816B9760077C20C /* ViewExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtend.swift; sourceTree = "<group>"; };
 		4F77A8E52819881F00C6FD05 /* ColorExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtend.swift; sourceTree = "<group>"; };
+		4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrRegisterViewController.swift; sourceTree = "<group>"; };
+		4F77A8EB281994FD00C6FD05 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4F77A8ED281996E000C6FD05 /* music-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "music-Bridging-Header.h"; sourceTree = "<group>"; };
 		52060A5C9FF267404FA62987 /* Pods-music.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-music.release.xcconfig"; path = "Target Support Files/Pods-music/Pods-music.release.xcconfig"; sourceTree = "<group>"; };
 		6673BAB274B4E16207985D4E /* Pods-musicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicTests.debug.xcconfig"; path = "Target Support Files/Pods-musicTests/Pods-musicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7513B8A36C55429EF1068B6 /* Pods_musicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_musicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +173,9 @@
 			children = (
 				4F6F785E281688C20077C20C /* SplashViewController.swift */,
 				4F6F78612816897E0077C20C /* GuideViewController.swift */,
+				4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */,
+				4F77A8EB281994FD00C6FD05 /* HomeViewController.swift */,
+				4F77A8ED281996E000C6FD05 /* music-Bridging-Header.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -287,6 +296,7 @@
 				TargetAttributes = {
 					4F18F8EA28116FC600BB0524 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					4F18F90028116FC800BB0524 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -490,7 +500,9 @@
 				4F6F786D2816B9760077C20C /* ViewExtend.swift in Sources */,
 				4F6F785F281688C20077C20C /* SplashViewController.swift in Sources */,
 				4F6F78622816897E0077C20C /* GuideViewController.swift in Sources */,
+				4F77A8E9281991DC00C6FD05 /* LoginOrRegisterViewController.swift in Sources */,
 				4F77A8E62819881F00C6FD05 /* ColorExtend.swift in Sources */,
+				4F77A8EC281994FD00C6FD05 /* HomeViewController.swift in Sources */,
 				4F6F78692816B54B0077C20C /* ViewUtil.swift in Sources */,
 				4F6F78662816AE8E0077C20C /* Constant.swift in Sources */,
 				4F18F8F328116FC600BB0524 /* ViewController.swift in Sources */,
@@ -513,6 +525,7 @@
 				4F6F786E2816B9760077C20C /* ViewExtend.swift in Sources */,
 				4F6F7860281688C20077C20C /* SplashViewController.swift in Sources */,
 				4F6F78632816897E0077C20C /* GuideViewController.swift in Sources */,
+				4F77A8EA281991DC00C6FD05 /* LoginOrRegisterViewController.swift in Sources */,
 				4F77A8E72819882B00C6FD05 /* ColorExtend.swift in Sources */,
 				4F6F786A2816B54B0077C20C /* ViewUtil.swift in Sources */,
 				4F6F78672816AE8E0077C20C /* Constant.swift in Sources */,
@@ -676,8 +689,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9T68GCY58Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = music/Info.plist;
@@ -694,6 +709,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.chajingui.music;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "music/ViewControllers/music-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -705,8 +722,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9T68GCY58Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = music/Info.plist;
@@ -723,6 +742,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.chajingui.music;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "music/ViewControllers/music-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

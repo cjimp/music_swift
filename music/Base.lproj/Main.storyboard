@@ -79,6 +79,9 @@
                                                 <state key="normal" title="登陆/注册">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onLoginOrRegisterClick:" destination="PPz-LH-Gqs" eventType="touchUpInside" id="GvT-J0-E6n"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qn-vi-QZ9">
                                                 <rect key="frame" x="278" y="35" width="82" height="31"/>
@@ -88,6 +91,9 @@
                                                 <state key="normal" title="立即体验">
                                                     <color key="titleColor" red="0.86666666670000003" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onEnterClick:" destination="PPz-LH-Gqs" eventType="touchUpInside" id="XIL-pf-LIX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -126,6 +132,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dio-Fl-PhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="902.89855072463774" y="60.9375"/>
+        </scene>
+        <!--LoginOrRegister View Controller-->
+        <scene sceneID="evC-TT-HPg">
+            <objects>
+                <viewController storyboardIdentifier="LoginOrRegister" id="kRL-Hq-MFO" userLabel="LoginOrRegister View Controller" customClass="LoginOrRegisterViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U7x-B3-ScD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1uq-Cj-5iJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHb-Af-VLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="851"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="yv4-CY-flS">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="EDx-ov-rfS" customClass="HomeViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NLX-7J-SI2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSN-wI-y6e">
+                                <rect key="frame" x="186" y="437" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gZH-Ow-TAQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHd-PQ-B3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="1665"/>
         </scene>
     </scenes>
     <resources>

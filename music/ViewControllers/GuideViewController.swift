@@ -66,6 +66,22 @@ class GuideViewController: UIViewController {
         btEnter.layer.borderColor=UIColor(named: "ColorPrimary")?.cgColor
 }
 
+    /// 登录或注册按钮点击
+    ///
+    /// - Parameter sender: sender description
+    @IBAction func onLoginOrRegisterClick(_ sender: Any) {
+        // 调用它里面的方法显示登录/注册界面
+        AppDelegate.shared.toLoginOrRegister()
+    }
+    
+    /// 立即体验按钮点击
+    ///
+    /// - Parameter sender: sender description
+    @IBAction func onEnterClick(_ sender: Any) {
+        // 调用它里面的方法显示主界面
+        AppDelegate.shared.toHome()
+    }
+    
     /*
     // MARK: - Navigation
 
