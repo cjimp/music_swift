@@ -34,8 +34,12 @@ class SplashViewController: UIViewController {
 //        appDelegate.toGuide()
         
         //显示引导界面
-        AppDelegate.shared.toGuide()
-
+//        AppDelegate.shared.toGuide()
+        if PreferenceUtil.isShowGuide(){
+            AppDelegate.shared.toGuide()
+        }else{
+            AppDelegate.shared.toLoginOrRegister()
+        }
     }
 
     /*
