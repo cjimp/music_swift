@@ -23,3 +23,13 @@ let SIZE_BORDER = 1
 // MARK: 颜色
 /// 全局主色调
 let Color_Primary = 0xDD0000
+
+/// 亮灰色
+let COLOR_LIGHT_GREY=0xaaaaaa
+
+/// 高亮颜色
+let COLOR_HIGHLIGHT = 0xDD0000
+
+
+///站位图
+let IMAGE_PLACE_HOLDER = "PlaceHolder"

@@ -63,7 +63,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFR-H3-UFZ" userLabel="Container">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-vx-Bo9" userLabel="Header">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-vx-Bo9" userLabel="Header" customClass="YJBannerView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -124,6 +124,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="73Y-vx-Bo9" id="ViU-cI-f24"/>
                         <outlet property="btEnter" destination="9Qn-vi-QZ9" id="MAV-ov-acd"/>
                         <outlet property="btLoginOrRegister" destination="4LA-U3-r85" id="qMj-lz-96q"/>
                         <outlet property="vwfootcontainer" destination="R5C-kY-wrS" id="Bg0-kB-Kia"/>

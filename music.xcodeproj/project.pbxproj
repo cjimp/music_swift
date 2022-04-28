@@ -170,7 +170,6 @@
 				4F6F785D281688930077C20C /* ViewControllers */,
 				4F18F8EE28116FC600BB0524 /* AppDelegate.swift */,
 				4F18F8F228116FC600BB0524 /* ViewController.swift */,
-				4F77A8ED281996E000C6FD05 /* music-Bridging-Header.h */,
 				4F18F8F428116FC600BB0524 /* Main.storyboard */,
 				4F18F8F728116FC800BB0524 /* Assets.xcassets */,
 				4F18F8F928116FC800BB0524 /* LaunchScreen.storyboard */,
@@ -203,6 +202,7 @@
 				4F6F78612816897E0077C20C /* GuideViewController.swift */,
 				4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */,
 				4F77A8EB281994FD00C6FD05 /* HomeViewController.swift */,
+				4F77A8ED281996E000C6FD05 /* music-Bridging-Header.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
