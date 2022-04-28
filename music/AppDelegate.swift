@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return UIApplication.shared.delegate as! AppDelegate
         }
     }
-
-    func toGuide() {
+   
+    func setRootViewControll(name:String){
         //获取到Main.storyboard
         let mainStory=UIStoryboard(name: "Main", bundle: nil)
         
@@ -29,43 +29,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //所以也可以说实例化控制器
         //但实例化过程是系统完成的
         //不是我们手动创建的
-        let controller=mainStory.instantiateViewController(withIdentifier: "Guide")
+        let controller=mainStory.instantiateViewController(withIdentifier: name)
         
         //这里替换到原来的根控制器
         //目的是，我们不希望用户还能返回到给界面
         self.window!.rootViewController = controller
     }
 
+    func toGuide() {
+      setRootViewControll(name: "Guide")
+    }
+
     /// 跳转到登录/注册页面
     func toLoginOrRegister() {
-        //获取到Main.storyboard
-        let mainStory=UIStoryboard(name: "Main", bundle: nil)
-        
-        //实例化Guide场景，因为场景有控制器
-        //所以也可以说实例化控制器，但实例化过程是系统完成的
-        //不是我们手动创建的
-        let controller=mainStory.instantiateViewController(withIdentifier: "LoginOrRegister")
-        
-        //这里替换到原来的根控制器
-        //目的是，我们不希望用户还能返回到给界面
-        self.window!.rootViewController = controller;
+       setRootViewControll(name: "LoginOrRegister")
         
     }
     
     /// 跳转到首页
     func toHome() {
-        //获取到Main.storyboard
-        let mainStory=UIStoryboard(name: "Main", bundle: nil)
-        
-        //实例化Guide场景，因为场景有控制器
-        //所以也可以说实例化控制器，但实例化过程是系统完成的
-        //不是我们手动创建的
-        let controller=mainStory.instantiateViewController(withIdentifier: "Home")
-        
-        //这里替换到原来的根控制器
-        //目的是，我们不希望用户还能返回到给界面
-        self.window!.rootViewController = controller;
-        
+        setRootViewControll(name: "Home")
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
