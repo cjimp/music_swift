@@ -86,7 +86,7 @@ class GuideViewController: UIViewController{
     ///
     /// - Parameter sender: sender description
     @IBAction func onLoginOrRegisterClick(_ sender: Any) {
-//        PreferenceUtil.setShowGuide(isShowGuide: true)
+        //不再播放轮播图
         setShowGuide()
         // 调用它里面的方法显示登录/注册界面
         AppDelegate.shared.toLoginOrRegister()
@@ -99,7 +99,7 @@ class GuideViewController: UIViewController{
 //        PreferenceUtil.setShowGuide(isShowGuide: true)
          setShowGuide()
         // 调用它里面的方法显示主界面
-        AppDelegate.shared.toHome()
+        //AppDelegate.shared.toHome()
     }
     
     func setShowGuide(){

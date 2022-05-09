@@ -42,6 +42,7 @@
 		4FB5270B281ABEE400B9947C /* YJBannerViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB52701281ABEE400B9947C /* YJBannerViewFooter.m */; };
 		4FB5270F281ACF6C00B9947C /* BannerGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB5270E281ACF6C00B9947C /* BannerGuideController.swift */; };
 		4FB52711281AE54F00B9947C /* PreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB52710281AE54F00B9947C /* PreferenceUtil.swift */; };
+		4FE5CE102829027700CD11CA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5CE0F2829027700CD11CA /* RegisterViewController.swift */; };
 		551E665241CD2E2CF04F9619 /* Pods_music_musicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D693B716A86B8C2FBD1A5A /* Pods_music_musicUITests.framework */; };
 		FBB5AAF3F3F074B522BB2F95 /* Pods_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB895AF814076D50B8FAF542 /* Pods_music.framework */; };
 /* End PBXBuildFile section */
@@ -105,6 +106,7 @@
 		4FB52702281ABEE400B9947C /* YJBannerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCell.h; sourceTree = "<group>"; };
 		4FB5270E281ACF6C00B9947C /* BannerGuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerGuideController.swift; sourceTree = "<group>"; };
 		4FB52710281AE54F00B9947C /* PreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUtil.swift; sourceTree = "<group>"; };
+		4FE5CE0F2829027700CD11CA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		52060A5C9FF267404FA62987 /* Pods-music.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-music.release.xcconfig"; path = "Target Support Files/Pods-music/Pods-music.release.xcconfig"; sourceTree = "<group>"; };
 		6673BAB274B4E16207985D4E /* Pods-musicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicTests.debug.xcconfig"; path = "Target Support Files/Pods-musicTests/Pods-musicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7513B8A36C55429EF1068B6 /* Pods_musicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_musicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +210,7 @@
 				4F77A8EB281994FD00C6FD05 /* HomeViewController.swift */,
 				4F77A8ED281996E000C6FD05 /* music-Bridging-Header.h */,
 				4FB5270E281ACF6C00B9947C /* BannerGuideController.swift */,
+				4FE5CE0F2829027700CD11CA /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				4FB52703281ABEE400B9947C /* UIView+YJBannerViewExt.m in Sources */,
 				4F6F78622816897E0077C20C /* GuideViewController.swift in Sources */,
 				4FB52711281AE54F00B9947C /* PreferenceUtil.swift in Sources */,
+				4FE5CE102829027700CD11CA /* RegisterViewController.swift in Sources */,
 				4F77A8E9281991DC00C6FD05 /* LoginOrRegisterViewController.swift in Sources */,
 				4FB5270F281ACF6C00B9947C /* BannerGuideController.swift in Sources */,
 				4F77A8E62819881F00C6FD05 /* ColorExtend.swift in Sources */,

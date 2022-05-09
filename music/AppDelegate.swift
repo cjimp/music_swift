@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = controller
     }
 
+    
     func toGuide() {
       setRootViewControll(name: "Guide")
     }

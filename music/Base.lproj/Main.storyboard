@@ -190,8 +190,13 @@
                                                                     <color key="titleColor" name="ColorPrimary"/>
                                                                 </state>
                                                                 <state key="highlighted">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="touchdown:" destination="kRL-Hq-MFO" eventType="touchDown" id="B2E-pP-Cd4"/>
+                                                                    <action selector="touchup:" destination="kRL-Hq-MFO" eventType="touchUpInside" id="HZo-Rr-Kcg"/>
+                                                                    <action selector="touchupoutside:" destination="kRL-Hq-MFO" eventType="touchDragOutside" id="cfQ-Ud-Ked"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrL-f3-EdS">
                                                                 <rect key="frame" x="0.0" y="64" width="354" height="44"/>
@@ -205,12 +210,122 @@
                                                                 </state>
                                                                 <state key="highlighted">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="secondarySystemBackgroundColor"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="touchdown:" destination="kRL-Hq-MFO" eventType="touchDown" id="mDD-Az-bJX"/>
+                                                                    <action selector="touchup:" destination="kRL-Hq-MFO" eventType="touchUpInside" id="vEL-pw-SFh"/>
+                                                                    <action selector="touchupoutside:" destination="kRL-Hq-MFO" eventType="touchDragOutside" id="Di4-hD-ewZ"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lU0-IF-qdy">
-                                                                <rect key="frame" x="0.0" y="128" width="354" height="259"/>
+                                                                <rect key="frame" x="0.0" y="128" width="354" height="127"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 其他登录方式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yer-jE-Dp8">
+                                                                <rect key="frame" x="0.0" y="275" width="354" height="17"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="17" id="EjQ-PT-Jca"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DcW-50-R3M">
+                                                                <rect key="frame" x="0.0" y="312" width="354" height="75"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rKc-ed-mnw">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="75"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5k-WI-DeR">
+                                                                                <rect key="frame" x="23.5" y="0.0" width="42" height="42"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="42" id="6dq-mo-QCX"/>
+                                                                                    <constraint firstAttribute="height" constant="42" id="nYI-vs-k1D"/>
+                                                                                </constraints>
+                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                <state key="normal" title="Button" image="LoginQQ"/>
+                                                                                <state key="highlighted" image="LoginQQSelected"/>
+                                                                                <connections>
+                                                                                    <action selector="onClickQQLogin:" destination="kRL-Hq-MFO" eventType="touchUpInside" id="5sM-hy-qwH"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibr-2r-kGE">
+                                                                                <rect key="frame" x="33.5" y="42" width="21.5" height="33"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Ug-fn-jvT">
+                                                                        <rect key="frame" x="88.5" y="0.0" width="88.5" height="75"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-fu-APY">
+                                                                                <rect key="frame" x="23.5" y="0.0" width="42" height="42"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="42" id="Kv4-dB-qoF"/>
+                                                                                    <constraint firstAttribute="width" constant="42" id="Rma-Or-BWm"/>
+                                                                                </constraints>
+                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                <state key="normal" title="Button" image="LoginWechat"/>
+                                                                                <state key="highlighted" image="LoginWechatSelected"/>
+                                                                            </button>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fj-BI-9sE">
+                                                                                <rect key="frame" x="30" y="42" width="29" height="33"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mso-qP-utt">
+                                                                        <rect key="frame" x="177" y="0.0" width="88.5" height="75"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-Tn-8Ic">
+                                                                                <rect key="frame" x="23.5" y="0.0" width="42" height="42"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="42" id="3AX-sU-eKr"/>
+                                                                                    <constraint firstAttribute="height" constant="42" id="3hV-OB-AsK"/>
+                                                                                </constraints>
+                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                <state key="normal" title="Button" image="LoginWeibo"/>
+                                                                                <state key="highlighted" image="LoginWeiboSelected"/>
+                                                                            </button>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微博" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKL-ve-N5L">
+                                                                                <rect key="frame" x="30" y="42" width="29" height="33"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Z-If-sxS">
+                                                                        <rect key="frame" x="265.5" y="0.0" width="88.5" height="75"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HG-3O-PPG">
+                                                                                <rect key="frame" x="23.5" y="0.0" width="42" height="42"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="42" id="2Xc-xU-Pfk"/>
+                                                                                    <constraint firstAttribute="width" constant="42" id="YdL-6Y-dWu"/>
+                                                                                </constraints>
+                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                <state key="normal" title="Button" image="LoginNetease"/>
+                                                                                <state key="highlighted" image="LoginNeteaseSelected"/>
+                                                                            </button>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易邮箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9U-I6-gsI">
+                                                                                <rect key="frame" x="15.5" y="42" width="57.5" height="33"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="75" id="Mu5-Xr-vsP"/>
+                                                                </constraints>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -244,10 +359,38 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jZ4-TI-aoi"/>
+                    <connections>
+                        <outlet property="btLogin" destination="eGk-pA-EXi" id="m1g-RX-DJR"/>
+                        <outlet property="btRegister" destination="UrL-f3-EdS" id="DZN-PW-9Lw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHb-Af-VLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="850.44642857142856"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="BRY-NJ-Xjo">
+            <objects>
+                <viewController storyboardIdentifier="Register" id="1C3-6T-fDj" customClass="RegisterViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8eC-p1-baz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3a-pe-Fe7">
+                                <rect key="frame" x="186" y="438" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VMX-u1-Wef"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUJ-R4-kCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105.7971014492755" y="1289.7321428571429"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="yv4-CY-flS">
@@ -271,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SHd-PQ-B3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="1665"/>
+            <point key="canvasLocation" x="19" y="2044"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xL-5U-VRw">
@@ -296,9 +439,20 @@
         <image name="LaunchImage" width="375" height="667"/>
         <image name="LoginBackground" width="180" height="186.66667175292969"/>
         <image name="LoginLogo" width="60" height="60"/>
+        <image name="LoginNetease" width="42" height="42"/>
+        <image name="LoginNeteaseSelected" width="42" height="42"/>
+        <image name="LoginQQ" width="42" height="42"/>
+        <image name="LoginQQSelected" width="42" height="42"/>
+        <image name="LoginWechat" width="42" height="42"/>
+        <image name="LoginWechatSelected" width="42" height="42"/>
+        <image name="LoginWeibo" width="42" height="42"/>
+        <image name="LoginWeiboSelected" width="42" height="42"/>
         <namedColor name="ColorPrimary">
             <color red="0.8666666666666667" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
