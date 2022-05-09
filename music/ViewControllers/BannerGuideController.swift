@@ -56,7 +56,7 @@ extension GuideViewController:YJBannerViewDelegate,YJBannerViewDataSource{
     /// - Parameter bannerView: 轮播组价
     /// - Returns: 返回要显示的图片
     func bannerViewImages(_ bannerView: YJBannerView!) -> [Any]! {
-        return ["Cjglogo","Cjglogo","Cjglogo","Cjglogo","Cjglogo"]
+        return ["Guide1","Guide2","Guide3","Guide4","Guide5"]
     }
     
     /// 自定义Cell
@@ -73,7 +73,7 @@ extension GuideViewController:YJBannerViewDelegate,YJBannerViewDataSource{
         // 因为我们要给他配置一些属性
         let cell = customCell as! YJBannerViewCell
         
-        cell.showImageViewContentMode=UIView.ContentMode.scaleAspectFit
+        cell.showImageViewContentMode=UIView.ContentMode.scaleToFill
         
         return cell
     }

@@ -26,7 +26,6 @@ class PreferenceUtil{
                 // 如果存储的是true，就不会来到这里
                 return true
             }
-            
             // 其他情况下，返回false
             return false
         }

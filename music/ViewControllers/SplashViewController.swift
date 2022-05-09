@@ -14,10 +14,10 @@ class SplashViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         // 延时3秒钟
-            // 时间大家可以根据业务需求调整
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                self.next()
-            }
+        //    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        self.next()
+        //    }
+    
     }
     
     func next() {
@@ -32,6 +32,7 @@ class SplashViewController: UIViewController {
 //
 //        // 调用它里面的方法显示引导界面
 //        appDelegate.toGuide()
+        
         
         //显示引导界面
 //        AppDelegate.shared.toGuide()
