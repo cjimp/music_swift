@@ -379,7 +379,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="q1t-Kb-kYF">
                                 <rect key="frame" x="20" y="64" width="374" height="382"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入昵称（2～15位）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZS-4C-B36">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入昵称（2～15位）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lZS-4C-B36">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="GU7-hv-EDA"/>
@@ -394,13 +394,13 @@
                                             <constraint firstAttribute="height" constant="0.5" id="q8d-3c-oyN"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWq-tT-bzU">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xWq-tT-bzU">
                                         <rect key="frame" x="0.0" y="50.5" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Qdo-ut-bqr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVo-k5-Vv6">
                                         <rect key="frame" x="0.0" y="100.5" width="374" height="0.5"/>
@@ -409,13 +409,13 @@
                                             <constraint firstAttribute="height" constant="0.5" id="ekf-d8-j2N"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOE-H2-XBs">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YOE-H2-XBs">
                                         <rect key="frame" x="0.0" y="101" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="DjE-nh-eZk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSL-J3-cl2">
                                         <rect key="frame" x="0.0" y="151" width="374" height="0.5"/>
@@ -424,13 +424,13 @@
                                             <constraint firstAttribute="height" constant="0.5" id="8Rl-s7-vMY"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置密码（6～15位）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aP-Lo-WKT">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置密码（6～15位）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6aP-Lo-WKT">
                                         <rect key="frame" x="0.0" y="151.5" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="MrI-Ox-8q9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARo-PT-Qya">
                                         <rect key="frame" x="0.0" y="201.5" width="374" height="0.5"/>
@@ -439,13 +439,13 @@
                                             <constraint firstAttribute="height" constant="0.5" id="Blk-2u-opa"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXD-ap-V1q">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请确认密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FXD-ap-V1q">
                                         <rect key="frame" x="0.0" y="202" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="W27-vd-BcX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWs-8D-gvg">
                                         <rect key="frame" x="0.0" y="252" width="374" height="30"/>
@@ -465,6 +465,9 @@
                                         <state key="normal" title="注册">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onClickRegister:" destination="1C3-6T-fDj" eventType="touchUpInside" id="hOC-kJ-Otg"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbA-Wu-CtB">
                                         <rect key="frame" x="0.0" y="322" width="374" height="30"/>
@@ -479,6 +482,9 @@
                                         <state key="normal" title="注册就代表同意《用户协议》">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onClickAgreement:" destination="1C3-6T-fDj" eventType="touchUpInside" id="2C2-08-DN5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -491,6 +497,14 @@
                             <constraint firstItem="VMX-u1-Wef" firstAttribute="trailing" secondItem="q1t-Kb-kYF" secondAttribute="trailing" constant="20" id="vb1-FX-zdI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btRegister" destination="z2T-aW-UF3" id="11F-Hg-VAa"/>
+                        <outlet property="tfConfirmPassword" destination="FXD-ap-V1q" id="4pv-qb-BnS"/>
+                        <outlet property="tfEmail" destination="YOE-H2-XBs" id="59o-F1-8FR"/>
+                        <outlet property="tfNickname" destination="lZS-4C-B36" id="7xY-WW-uDL"/>
+                        <outlet property="tfPassword" destination="6aP-Lo-WKT" id="KG7-Fu-xer"/>
+                        <outlet property="tfPhone" destination="xWq-tT-bzU" id="MKf-eZ-sGM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUJ-R4-kCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

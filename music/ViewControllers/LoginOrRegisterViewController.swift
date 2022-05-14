@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginOrRegisterViewController: UIViewController {
+class LoginOrRegisterViewController: BaseViewController {
 
     @IBOutlet weak var btLogin: UIButton!
     @IBOutlet weak var btRegister: UIButton!
@@ -36,6 +36,11 @@ class LoginOrRegisterViewController: UIViewController {
     
     func toLogin(){
         print("login")
+        //ToastUtil.short("test测试")
+        ToastUtil.showLoading()
+        DispatchQueue.main.asyncAfter(deadline: .now()+3.0){
+            ToastUtil.hideLoading()
+        }
     }
     
     func toRegister(){
@@ -54,7 +59,7 @@ class LoginOrRegisterViewController: UIViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    func initview() {
+    override func initViews() {
         //圆角
         ViewUtil.showLargeRadius(view: btLogin)
         ViewUtil.showLargeRadius(view: btRegister)
@@ -67,7 +72,6 @@ class LoginOrRegisterViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        initview()
     }
     
 

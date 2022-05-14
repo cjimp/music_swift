@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0045F080C4D4B10A414E152F /* Pods_musicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7513B8A36C55429EF1068B6 /* Pods_musicTests.framework */; };
 		4F18F8EF28116FC600BB0524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F8EE28116FC600BB0524 /* AppDelegate.swift */; };
-		4F18F8F328116FC600BB0524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F8F228116FC600BB0524 /* ViewController.swift */; };
 		4F18F8F628116FC600BB0524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F8F428116FC600BB0524 /* Main.storyboard */; };
 		4F18F8F828116FC800BB0524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F8F728116FC800BB0524 /* Assets.xcassets */; };
 		4F18F8FB28116FC800BB0524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F8F928116FC800BB0524 /* LaunchScreen.storyboard */; };
@@ -31,6 +30,9 @@
 		4F77A8E9281991DC00C6FD05 /* LoginOrRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */; };
 		4F77A8EA281991DC00C6FD05 /* LoginOrRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */; };
 		4F77A8EC281994FD00C6FD05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77A8EB281994FD00C6FD05 /* HomeViewController.swift */; };
+		4F95EC3E282F8362003C9BDF /* TextFieldExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95EC3D282F8362003C9BDF /* TextFieldExtend.swift */; };
+		4F95EC44282F86CC003C9BDF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95EC43282F86CC003C9BDF /* BaseViewController.swift */; };
+		4F95EC46282F88DE003C9BDF /* ToastUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95EC45282F88DE003C9BDF /* ToastUtil.swift */; };
 		4FB52703281ABEE400B9947C /* UIView+YJBannerViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB526EE281ABEE400B9947C /* UIView+YJBannerViewExt.m */; };
 		4FB52704281ABEE400B9947C /* YJBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB526F0281ABEE400B9947C /* YJBannerView.m */; };
 		4FB52705281ABEE400B9947C /* YJHollowPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB526F4281ABEE400B9947C /* YJHollowPageControl.m */; };
@@ -44,7 +46,7 @@
 		4FB52711281AE54F00B9947C /* PreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB52710281AE54F00B9947C /* PreferenceUtil.swift */; };
 		4FE5CE102829027700CD11CA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5CE0F2829027700CD11CA /* RegisterViewController.swift */; };
 		551E665241CD2E2CF04F9619 /* Pods_music_musicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D693B716A86B8C2FBD1A5A /* Pods_music_musicUITests.framework */; };
-		FBB5AAF3F3F074B522BB2F95 /* Pods_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB895AF814076D50B8FAF542 /* Pods_music.framework */; };
+		FBB5AAF3F3F074B522BB2F95 /* Pods_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB895AF814076D50B8FAF542 /* Pods_music.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +70,6 @@
 		38D693B716A86B8C2FBD1A5A /* Pods_music_musicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_music_musicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F18F8EB28116FC600BB0524 /* music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F18F8EE28116FC600BB0524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F18F8F228116FC600BB0524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F18F8F528116FC600BB0524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F18F8F728116FC800BB0524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F18F8FA28116FC800BB0524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		4F18F90B28116FC800BB0524 /* musicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F18F90F28116FC800BB0524 /* musicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicUITests.swift; sourceTree = "<group>"; };
 		4F18F91128116FC800BB0524 /* musicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F220EA4282F8DCC005E858E /* music-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "music-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F6F785E281688C20077C20C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		4F6F78612816897E0077C20C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		4F6F78652816AE8E0077C20C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -86,7 +88,9 @@
 		4F77A8E52819881F00C6FD05 /* ColorExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtend.swift; sourceTree = "<group>"; };
 		4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrRegisterViewController.swift; sourceTree = "<group>"; };
 		4F77A8EB281994FD00C6FD05 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		4F77A8ED281996E000C6FD05 /* music-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "music-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F95EC3D282F8362003C9BDF /* TextFieldExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtend.swift; sourceTree = "<group>"; };
+		4F95EC43282F86CC003C9BDF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4F95EC45282F88DE003C9BDF /* ToastUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastUtil.swift; sourceTree = "<group>"; };
 		4FB526EE281ABEE400B9947C /* UIView+YJBannerViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJBannerViewExt.m"; sourceTree = "<group>"; };
 		4FB526EF281ABEE400B9947C /* UIView+YJBannerViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YJBannerViewExt.h"; sourceTree = "<group>"; };
 		4FB526F0281ABEE400B9947C /* YJBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerView.m; sourceTree = "<group>"; };
@@ -175,11 +179,11 @@
 				4F6F78642816AE5A0077C20C /* Util */,
 				4F6F785D281688930077C20C /* ViewControllers */,
 				4F18F8EE28116FC600BB0524 /* AppDelegate.swift */,
-				4F18F8F228116FC600BB0524 /* ViewController.swift */,
 				4F18F8F428116FC600BB0524 /* Main.storyboard */,
 				4F18F8F728116FC800BB0524 /* Assets.xcassets */,
 				4F18F8F928116FC800BB0524 /* LaunchScreen.storyboard */,
 				4F18F8FC28116FC800BB0524 /* Info.plist */,
+				4F220EA4282F8DCC005E858E /* music-Bridging-Header.h */,
 			);
 			path = music;
 			sourceTree = "<group>";
@@ -208,9 +212,9 @@
 				4F6F78612816897E0077C20C /* GuideViewController.swift */,
 				4F77A8E8281991DC00C6FD05 /* LoginOrRegisterViewController.swift */,
 				4F77A8EB281994FD00C6FD05 /* HomeViewController.swift */,
-				4F77A8ED281996E000C6FD05 /* music-Bridging-Header.h */,
 				4FB5270E281ACF6C00B9947C /* BannerGuideController.swift */,
 				4FE5CE0F2829027700CD11CA /* RegisterViewController.swift */,
+				4F95EC43282F86CC003C9BDF /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,6 +225,7 @@
 				4F6F78652816AE8E0077C20C /* Constant.swift */,
 				4F6F78682816B54B0077C20C /* ViewUtil.swift */,
 				4FB52710281AE54F00B9947C /* PreferenceUtil.swift */,
+				4F95EC45282F88DE003C9BDF /* ToastUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			children = (
 				4F6F786C2816B9760077C20C /* ViewExtend.swift */,
 				4F77A8E52819881F00C6FD05 /* ColorExtend.swift */,
+				4F95EC3D282F8362003C9BDF /* TextFieldExtend.swift */,
 			);
 			path = Extend;
 			sourceTree = "<group>";
@@ -609,6 +615,7 @@
 				4F6F786D2816B9760077C20C /* ViewExtend.swift in Sources */,
 				4FB52704281ABEE400B9947C /* YJBannerView.m in Sources */,
 				4FB5270A281ABEE400B9947C /* YJBannerViewCell.m in Sources */,
+				4F95EC44282F86CC003C9BDF /* BaseViewController.swift in Sources */,
 				4FB52709281ABEE400B9947C /* YJBannerViewCollectionView.m in Sources */,
 				4F6F785F281688C20077C20C /* SplashViewController.swift in Sources */,
 				4FB52706281ABEE400B9947C /* YJAbstractDotView.m in Sources */,
@@ -616,6 +623,7 @@
 				4F6F78622816897E0077C20C /* GuideViewController.swift in Sources */,
 				4FB52711281AE54F00B9947C /* PreferenceUtil.swift in Sources */,
 				4FE5CE102829027700CD11CA /* RegisterViewController.swift in Sources */,
+				4F95EC46282F88DE003C9BDF /* ToastUtil.swift in Sources */,
 				4F77A8E9281991DC00C6FD05 /* LoginOrRegisterViewController.swift in Sources */,
 				4FB5270F281ACF6C00B9947C /* BannerGuideController.swift in Sources */,
 				4F77A8E62819881F00C6FD05 /* ColorExtend.swift in Sources */,
@@ -625,7 +633,7 @@
 				4F6F78692816B54B0077C20C /* ViewUtil.swift in Sources */,
 				4FB52705281ABEE400B9947C /* YJHollowPageControl.m in Sources */,
 				4F6F78662816AE8E0077C20C /* Constant.swift in Sources */,
-				4F18F8F328116FC600BB0524 /* ViewController.swift in Sources */,
+				4F95EC3E282F8362003C9BDF /* TextFieldExtend.swift in Sources */,
 				4F18F8EF28116FC600BB0524 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -725,6 +733,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -829,8 +838,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.chajingui.music;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "music/ViewControllers/music-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "music/music-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -862,7 +872,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.chajingui.music;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "music/ViewControllers/music-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "music/music-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

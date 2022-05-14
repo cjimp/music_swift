@@ -7,8 +7,33 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: BaseViewController {
 
+    @IBOutlet weak var tfNickname: UITextField!
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfConfirmPassword: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var tfPhone: UITextField!
+    
+    @IBOutlet weak var btRegister: UIButton!
+    
+    
+    @IBAction func onClickRegister(_ sender: Any) {
+    }
+    
+    @IBAction func onClickAgreement(_ sender: Any) {
+    }
+    
+    
+    override func initViews() {
+        super.initViews()
+        ViewUtil.showLargeRadius(view: btRegister)
+        
+        tfNickname.showLeftIcon(name: "LoginItemPhone")
+        tfEmail.showLeftIcon(name: "LoginItemPhone")
+        tfPhone.showLeftIcon(name: "LoginItemPhone")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
