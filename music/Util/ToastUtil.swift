@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class ToastUtil{
     private static var hud:MBProgressHUD?
