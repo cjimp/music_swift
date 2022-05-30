@@ -7,6 +7,10 @@
 
 import Foundation
 
+// MARK: - 开发环境
+/// 网络接口地址
+let ENDPOINT="http://dev-my-cloud-music-api-rails.ixuea.com"
+
 // MARK: 尺寸
 /// 立即体验按钮宽度
 let SIZE_BUTTON_ENTER_WIDTH = 130.0

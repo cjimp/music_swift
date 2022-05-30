@@ -7,6 +7,8 @@
 
 import UIKit
 import RxSwift
+import Moya
+import HandyJSON
 
 class RegisterViewController: BaseViewController {
 
@@ -93,6 +95,35 @@ class RegisterViewController: BaseViewController {
     }
     
     @IBAction func onClickAgreement(_ sender: Any) {
+        //请求歌单详情
+        //用来测试网络请求框架
+        let provider = MoyaProvider<Service>()
+        provider
+            .rx
+            .request(.sheetDetail(id: "1"))
+            .subscribe { event in
+                //event类型为SingleEvent<Response>
+                switch event {
+                case let .success(response):
+                    //请求成功
+                    let data = response.data
+                    let code = response.statusCode
+                    
+                    //将data转为String
+                    //data的类型为Data
+                    let dataString = String(data: data, encoding: String.Encoding.utf8)
+                    print("RegisterController request sheet detail succes:\(code),\(dataString)")
+                    
+                    //解析为对象
+                    let sheetWrapper=SheetWrapper.deserialize(from: dataString)
+                    
+                    //解析完成后打印出歌单详情
+                    print("RegisterController request sheet detail:\(sheetWrapper!.data!.title!)")
+                case let .error(error):
+                    //请求失败
+                    print("RegisterController request sheet detail failed:\(error)")
+                }
+        }
     }
     
     

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0045F080C4D4B10A414E152F /* Pods_musicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7513B8A36C55429EF1068B6 /* Pods_musicTests.framework */; };
+		4F0711AF28449E680094F5F9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0711AE28449E680094F5F9 /* Service.swift */; };
+		4F0711B12844E9410094F5F9 /* SheetWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0711B02844E9410094F5F9 /* SheetWrapper.swift */; };
+		4F0711B42844E99E0094F5F9 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0711B32844E99E0094F5F9 /* Sheet.swift */; };
 		4F18F8EF28116FC600BB0524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F8EE28116FC600BB0524 /* AppDelegate.swift */; };
 		4F18F8F628116FC600BB0524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F8F428116FC600BB0524 /* Main.storyboard */; };
 		4F18F8F828116FC800BB0524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F8F728116FC800BB0524 /* Assets.xcassets */; };
@@ -73,6 +76,9 @@
 
 /* Begin PBXFileReference section */
 		38D693B716A86B8C2FBD1A5A /* Pods_music_musicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_music_musicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0711AE28449E680094F5F9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		4F0711B02844E9410094F5F9 /* SheetWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetWrapper.swift; sourceTree = "<group>"; };
+		4F0711B32844E99E0094F5F9 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
 		4F18F8EB28116FC600BB0524 /* music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F18F8EE28116FC600BB0524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F18F8F528116FC600BB0524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -158,6 +164,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F0711AD28449E4A0094F5F9 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				4F0711AE28449E680094F5F9 /* Service.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		4F0711B22844E94C0094F5F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F0711B02844E9410094F5F9 /* SheetWrapper.swift */,
+				4F0711B32844E99E0094F5F9 /* Sheet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4F18F8E228116FC600BB0524 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +206,8 @@
 		4F18F8ED28116FC600BB0524 /* music */ = {
 			isa = PBXGroup;
 			children = (
+				4F0711B22844E94C0094F5F9 /* Model */,
+				4F0711AD28449E4A0094F5F9 /* Api */,
 				4FB526EB281ABE6A00B9947C /* Vender */,
 				4F6F786B2816B9520077C20C /* Extend */,
 				4F6F78642816AE5A0077C20C /* Util */,
@@ -648,6 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F6F786D2816B9760077C20C /* ViewExtend.swift in Sources */,
+				4F0711AF28449E680094F5F9 /* Service.swift in Sources */,
 				4FB52704281ABEE400B9947C /* YJBannerView.m in Sources */,
 				4FB5270A281ABEE400B9947C /* YJBannerViewCell.m in Sources */,
 				4F95EC44282F86CC003C9BDF /* BaseViewController.swift in Sources */,
@@ -668,10 +694,12 @@
 				4F77A8EC281994FD00C6FD05 /* HomeViewController.swift in Sources */,
 				4F6F78692816B54B0077C20C /* ViewUtil.swift in Sources */,
 				4FB52705281ABEE400B9947C /* YJHollowPageControl.m in Sources */,
+				4F0711B12844E9410094F5F9 /* SheetWrapper.swift in Sources */,
 				4F6F78662816AE8E0077C20C /* Constant.swift in Sources */,
 				4F95EC3E282F8362003C9BDF /* TextFieldExtend.swift in Sources */,
 				4F18F8EF28116FC600BB0524 /* AppDelegate.swift in Sources */,
 				4F2A229328420DDA00686A6B /* FileUtil.swift in Sources */,
+				4F0711B42844E99E0094F5F9 /* Sheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
